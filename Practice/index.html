@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+        <body>
+            <h1>Groceries</h1>
+            <h2>My Shopping List</h2>
+            <form id="food-text">
+                <input type="text" placeholder="Groceries" name="food">
+                <button type="submit">Add Shopping Item</button>
+                <button type="reset">Remove Shopping Item</button>
+            </form>
+            <label>
+                <input id="completed" type="checkbox">Check Completed
+            </label>
+            <select id="filter-by">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+            </select>
+            <div id='shop'></div>
+            <script src="DOM.js"></script>
+        </body>
+</html>
