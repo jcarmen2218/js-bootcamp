@@ -29,3 +29,5 @@ removeElement.addEventListener('click', function(e) {
     savedNotes(notes)
     location.assign('/index.html')
 })
+
+// Remove Button
