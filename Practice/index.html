@@ -2,23 +2,36 @@
 
 <html>
     <head></head>
-        <body>
-            <h1>Groceries</h1>
-            <h2>My Shopping List</h2>
-            <form id="food-text">
-                <input type="text" placeholder="Groceries" name="food">
-                <button type="submit">Add Shopping Item</button>
-                <button type="reset">Remove Shopping Item</button>
-            </form>
-            <label>
-                <input id="completed" type="checkbox">Check Completed
-            </label>
-            <select id="filter-by">
-                <option value="byEdited">Sort by last edited</option>
-                <option value="byCreated">Sort by recently created</option>
-                <option value="alphabetical">Sort alphabetically</option>
-            </select>
-            <div id='shop'></div>
-            <script src="DOM.js"></script>
-        </body>
+    <body>
+        <h1>Shopping List</h1>
+        <input id="food-text" type="text" placeholder="Filter Food Items">
+        <label>
+            <input id="hide-checked" type="checkbox">Hide Checked
+        </label>
+        <select id="filter-by">
+            <option value="byEdited">Sort by last edited</option>
+            <option value="byCreated">Sort by recently created</option>
+            <option value="alphabetical">Sort alphabetically</option>
+        </select>
+        <div id='grocery'></div>
+        <form id="shop-text">
+            <input type ="text" placeholder="Enter Food Item" name="grocery">
+            <button>Add Food Item</button>
+        </form>
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment-with-locales.min.js"></script>
+        <script src="DOM-food.js"></script>
+        <script src="DOM.js"></script>
+    </body>
 </html>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+           
