@@ -1,3 +1,5 @@
+'use strict'
+
 let toDos = getSavedTodos()
 
 const filters = {
@@ -7,12 +9,12 @@ const filters = {
 
 rendertoDos(toDos, filters)
 
-document.querySelector('#search-text').addEventListener('input', function(e) {
+document.querySelector('#search-text').addEventListener('input', (e) => {
    filters.searchText = e.target.value
    rendertoDos(toDos, filters)
 })
 
-document.querySelector('#toDo-text').addEventListener('submit', function(e){
+document.querySelector('#toDo-text').addEventListener('submit', (e) => {
    e.preventDefault()
    toDos.push({
       id: uuidv4(),
@@ -25,7 +27,7 @@ document.querySelector('#toDo-text').addEventListener('submit', function(e){
    e.target.elements.toDos.value=''
 })
 
-document.querySelector('#hide-completed').addEventListener('change', function(e){
+document.querySelector('#hide-completed').addEventListener('change', (e) => {
   filters.hideCompleted = e.target.checked
   rendertoDos(toDos, filters)
 })
